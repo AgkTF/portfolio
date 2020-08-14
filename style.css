@@ -1,0 +1,559 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "Cabin", sans-serif;
+  src: local("Cabin"),
+    url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+  src: local("Ubuntu"),
+    url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+  font-display: swap;
+}
+
+:root {
+  --main-bg: #062844;
+  --secondary: #7e96b9;
+  --third-bg: #3c5574;
+  --body--text: #f5f5f7;
+  --yellow: #ffed5a;
+  --dark-grey: #a2acbd;
+}
+
+body {
+  margin: 0;
+  background: var(--main-bg);
+  min-width: 375px;
+}
+/*  TODO: On hover, try the glitch effect */
+
+.hero {
+  height: 538px;
+  background-image: linear-gradient(rgba(6, 41, 70, 0.5), rgba(6, 41, 70, 0.5)),
+    url(./images/jesus-kiteque-wn-KYaHwcis-unsplash.jpg);
+  background-clip: border-box;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.left__thing {
+  height: 80px;
+  width: 48px;
+  border-left: 5px solid var(--body--text);
+  border-top: 5px solid var(--body--text);
+  position: absolute;
+}
+
+.right__thing {
+  height: 80px;
+  width: 224px;
+  border-right: 5px solid var(--body--text);
+  border-top: 5px solid var(--body--text);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.logo {
+  font-family: "Ubuntu", sans-serif;
+  color: var(--body--text);
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+}
+
+.square:nth-child(1):hover {
+  background: #4267b2;
+}
+
+.square:nth-child(2):hover {
+  background: #1da1f2;
+}
+
+.square:nth-child(3):hover {
+  background: #000;
+}
+
+.social_icons {
+  width: 16px;
+  height: 16px;
+  padding: 8px 8px;
+  border: 1px solid var(--body--text);
+  text-align: center;
+  color: var(--body--text);
+}
+
+.hero__content {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  color: var(--body--text);
+  text-align: center;
+  margin-top: 8rem;
+}
+
+#hero__js {
+  font-weight: bold;
+  transition: all ease-out 1s;
+}
+#hero__js:hover {
+  color: var(--yellow);
+}
+
+.sec__title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary);
+  font-weight: bold;
+  margin-top: 5rem;
+}
+
+.em-dash-left {
+  font-weight: normal;
+  margin-right: 8px;
+}
+
+.em-dash-right {
+  font-weight: normal;
+  margin-left: 8px;
+}
+
+.skills__boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.skill__box-title {
+  color: var(--secondary);
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  background: var(--body--text);
+  box-shadow: 5px 5px 1px 0px var(--third-bg);
+  text-align: center;
+  box-sizing: border-box;
+  padding: 11px 16px;
+  cursor: pointer;
+  z-index: 1000;
+  outline: none;
+  border: none;
+}
+
+.skill__box-title:hover .chevron-left {
+  animation: pointingR 1s infinite;
+  visibility: visible;
+  margin-right: 8px;
+}
+
+.skill__box-title:hover .chevron-right {
+  animation: pointingL 1s infinite;
+  visibility: visible;
+  margin-left: 8px;
+}
+
+.skill__box-title-darkSh {
+  box-shadow: 5px 5px 1px 0px var(--main-bg);
+}
+
+.chevron {
+  vertical-align: middle;
+  visibility: hidden;
+  transition: all ease-in-out 0.1s;
+}
+
+.chevron-right {
+  transform: rotate(-180deg);
+}
+
+@keyframes pointingR {
+  0% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(-8px);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes pointingL {
+  0% {
+    transform: translateX(0%) rotate(-180deg);
+  }
+
+  50% {
+    transform: translateX(8px) rotate(-180deg);
+  }
+
+  100% {
+    transform: translateX(0%) rotate(-180deg);
+  }
+}
+
+.skill__box {
+  background: var(--third-bg);
+  transform: translateY(-2.6rem);
+  padding: 0 1rem 1.5rem 1rem;
+  box-shadow: 5px 5px 1px 0px var(--body--text);
+  margin: 0 2rem;
+  transition: all ease-in-out 1s;
+  display: none;
+  /* height: 0;
+  opacity: 0; */
+}
+
+.skills__box-visible {
+  display: block;
+  /* height: 100%;
+  opacity: 1; */
+}
+
+.skill__box-text {
+  font-family: "Cabin", sans-serif;
+  color: var(--body--text);
+  margin-top: 2em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.skills__logos {
+  width: 226px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+  margin: auto;
+}
+
+.skill-logo {
+  width: 46px;
+}
+
+.projects__boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.project__container {
+  position: relative;
+}
+
+.project__box {
+  border: 1px solid #efe7f6;
+  padding: 8px 0;
+  width: 336px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project__box:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.project__title {
+  color: var(--third-bg);
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  background: #efe7f6;
+  height: 40px;
+  width: 320px;
+  text-align: center;
+  line-height: 40px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* cursor: pointer;
+  outline: none; */
+
+  /* border: none; */
+  /* transition: all ease-in-out 0.5s; */
+  /* box-shadow: 2px 2px 1px 0px var(--body--text); */
+}
+
+/* .more_btn {
+  margin-left: 8px;
+  border: 1px solid var(--main-bg);
+  padding: 2px;
+  height: 24px;
+  width: 24px;
+} */
+
+/* .project__title:focus,
+.project__title:active {
+  box-shadow: none;
+} */
+
+.project__img {
+  width: 320px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.overlay {
+  width: 320px;
+  height: 220px;
+  background: #efe7f6d7;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  opacity: 0;
+  transition: all ease-in 1s;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+.overlay-visible {
+  opacity: 1;
+}
+
+.overlay__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.5rem;
+}
+
+.left-title {
+  color: var(--third-bg);
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+}
+
+.tags {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-height: 80px;
+}
+
+.tag {
+  width: 40px;
+  text-align: center;
+  color: var(--body--text);
+  font-family: "Cabin", sans-serif;
+  font-weight: normal;
+  font-size: 10px;
+  background: var(--main-bg);
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.right-title {
+  color: var(--third-bg);
+  font-weight: 100;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+}
+
+.right-content {
+  color: var(--third-bg);
+  font-family: "Cabin", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 2.3rem;
+}
+
+.overlay__buttons {
+  display: flex;
+  height: 40px;
+  width: 320px;
+  background: #efe7f6;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.square-dark {
+  border: 1px solid var(--main-bg);
+  box-shadow: 2px 2px 1px 0px var(--main-bg);
+}
+
+.contact__subtitle {
+  color: var(--body--text);
+  font-weight: bold;
+  font-family: "Cabin", sans-serif;
+  text-align: center;
+}
+
+.contact__cooperate {
+  color: var(--body--text);
+  font-weight: normal;
+  font-family: "Cabin", sans-serif;
+  margin: 0 2em;
+  line-height: 1.5em;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em 2em 4em 2em;
+  /* width: 352px; */
+  align-items: center;
+}
+
+.field {
+  margin-bottom: 1.5em;
+  height: 40px;
+  box-sizing: border-box;
+  border: none;
+  border-top: 3px solid var(--secondary);
+  background: var(--third-bg);
+  color: var(--body--text);
+  font-weight: normal;
+  font-family: "Cabin", sans-serif;
+  padding: 0 1em;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+.field::placeholder {
+  color: var(--body--text);
+}
+
+.field:focus::placeholder {
+  opacity: 0.25;
+}
+
+.area-field {
+  resize: vertical;
+  min-height: 11em;
+  padding-top: 1em;
+  line-height: 1.5em;
+}
+
+.form__btn {
+  background: var(--third-bg);
+  box-shadow: 2px -2px 1px 0px #718096;
+  color: var(--body--text);
+  outline: none;
+  font-weight: normal;
+  font-family: "Cabin", sans-serif;
+  padding: 1em 1.5em;
+  border: none;
+  width: 7em;
+  cursor: pointer;
+  transition: box-shadow linear 0.3s;
+}
+
+.form__btn:hover {
+  box-shadow: none;
+}
+
+.footer {
+  background: var(--third-bg);
+  text-align: center;
+  padding-top: 1rem;
+  box-sizing: border-box;
+}
+
+.logo-footer {
+  font-family: "Ubuntu", sans-serif;
+  color: var(--body--text);
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer__msg {
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+  color: var(--body--text);
+  font-weight: lighter;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.footer_icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 144px;
+  margin: auto;
+}
+
+.square-footer {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--dark-grey);
+}
+
+.footer__credits {
+  font-family: "Cabin", sans-serif;
+  font-size: 12px;
+  color: var(--body--text);
+  display: flex;
+  margin: 1.5rem 1rem 0rem 1rem;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.footer__credits p {
+  margin-bottom: 0;
+}
+
+.footer_heart {
+  color: red;
+}
+
+.netlify_footer {
+  width: 4rem;
+}
+
+.footer_links {
+  color: #5eb9da;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer_links:hover {
+  color: #0097fb;
+}
+
+.credit_aligned {
+  display: inline-block;
+  margin-top: 7px;
+}
+
+@media screen and (max-width: 414px) {
+  header {
+    box-sizing: border-box;
+    height: 5rem;
+    position: relative;
+  }
+  .logo {
+    margin-left: 5rem;
+  }
+}
