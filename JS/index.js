@@ -12,10 +12,8 @@ skillBoxTitles.forEach((title, index) => {
 
 const projectTitleBtns = document.querySelectorAll(".project__title");
 const overlays = document.querySelectorAll(".overlay");
-// console.log(overlays);
 projectTitleBtns.forEach((btn, index) => {
   btn.addEventListener("click", () => {
-    console.log(overlays[index]);
     overlays[index].classList.toggle("overlay-visible");
   });
 });

@@ -224,6 +224,8 @@ body {
 
 .skills__box-visible {
   display: block;
+  max-width: 21rem;
+
   /* height: 100%;
   opacity: 1; */
 }
@@ -420,8 +422,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: 1.5em 2em 4em 2em;
-  /* width: 352px; */
   align-items: center;
+  max-width: 352px;
 }
 
 .field {
@@ -547,7 +549,18 @@ body {
   margin-top: 7px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (min-width: 426px) {
+  .contact__cooperate {
+    max-width: 26em;
+    margin: auto;
+  }
+
+  .contact__form {
+    margin: 1.5em auto 4em;
+  }
+}
+
+@media screen and (max-width: 599px) {
   header {
     box-sizing: border-box;
     height: 5rem;
@@ -556,4 +569,45 @@ body {
   .logo {
     margin-left: 5rem;
   }
+
+  .footer__credits {
+    justify-content: space-evenly;
+  }
 }
+
+/* @media screen and (min-width: 500px) {
+  header {
+    box-sizing: border-box;
+    height: 7rem;
+    position: relative;
+  }
+
+  .logo {
+    margin-left: 6rem;
+    font-size: 2rem;
+  }
+
+  .icons {
+    right: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .social_icons {
+    width: 24px;
+    height: 24px;
+    font-size: 1.5rem;
+  }
+
+  .hero__content {
+    margin-top: 4rem;
+  }
+
+  .sec__title {
+    font-size: 2rem;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+} */
