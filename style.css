@@ -137,6 +137,12 @@ from 0px up to 426px
   margin-left: 8px;
 }
 
+.skill__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .skills__boxes {
   display: flex;
   flex-direction: column;
@@ -158,15 +164,18 @@ from 0px up to 426px
   z-index: 1000;
   outline: none;
   border: none;
+  width: fit-content;
 }
 
-.skill__box-title:hover .chevron-left {
+.skill__box-title:hover .chevron-left,
+.skill__box-title:focus .chevron-left {
   animation: pointingR 1s infinite;
   visibility: visible;
   margin-right: 8px;
 }
 
-.skill__box-title:hover .chevron-right {
+.skill__box-title:hover .chevron-right,
+.skill__box-title:focus .chevron-right {
   animation: pointingL 1s infinite;
   visibility: visible;
   margin-left: 8px;
@@ -216,12 +225,12 @@ from 0px up to 426px
 
 .skill__box {
   background: var(--third-bg);
-  transform: translateY(-2.6rem);
+  transform: translateY(-1rem);
   padding: 0 1rem 1.5rem 1rem;
   box-shadow: 5px 5px 1px 0px var(--body--text);
-  margin: 0 2rem;
-  transition: all ease-in-out 1s;
+  transition: all ease-in-out 0.5s;
   display: none;
+  margin: 0 2rem;
   /* height: 0;
   opacity: 0; */
 }
@@ -260,6 +269,7 @@ from 0px up to 426px
   flex-direction: column;
   align-items: center;
   position: relative;
+  gap: 1.5rem;
 }
 
 .project__container {
@@ -273,10 +283,6 @@ from 0px up to 426px
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.project__box:not(:last-child) {
-  margin-bottom: 1.5rem;
 }
 
 .project__title {
@@ -420,6 +426,7 @@ from 0px up to 426px
   font-family: "Cabin", sans-serif;
   margin: 0 2em;
   line-height: 1.5em;
+  text-align: center;
 }
 
 .contact__form {
@@ -428,6 +435,7 @@ from 0px up to 426px
   margin: 1.5em 2em 4em 2em;
   align-items: center;
   max-width: 352px;
+  transition: all linear 0.5s;
 }
 
 .field {
@@ -438,6 +446,7 @@ from 0px up to 426px
   border-top: 3px solid var(--secondary);
   background: var(--third-bg);
   color: var(--body--text);
+  font-size: 1rem;
   font-weight: normal;
   font-family: "Cabin", sans-serif;
   padding: 0 1em;
@@ -465,13 +474,17 @@ from 0px up to 426px
   box-shadow: 2px -2px 1px 0px #718096;
   color: var(--body--text);
   outline: none;
+  font-size: 1rem;
   font-weight: normal;
   font-family: "Cabin", sans-serif;
-  padding: 1em 1.5em;
+  padding: 1em;
   border: none;
   width: 7em;
   cursor: pointer;
   transition: box-shadow linear 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .form__btn:hover {
@@ -612,9 +625,62 @@ up to 767px
     margin-top: 4rem;
   }
 
+  .skills__boxes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .skill__container {
+    width: 21rem;
+  }
+
   .sec__title {
     font-size: 2rem;
     margin-top: 8rem;
     margin-bottom: 3rem;
+  }
+
+  .skill__box {
+    margin: 0;
+  }
+
+  .projects__boxes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .contact__subtitle {
+    font-size: 1.5rem;
+    margin: 0 auto 1.5rem auto;
+  }
+
+  .contact__cooperate,
+  .field,
+  .form__btn {
+    font-size: 18px;
+  }
+
+  .contact__form {
+    margin: 1.5em 2em 4em 2em;
+    max-width: 28rem;
+    margin: 2rem auto 6rem;
+  }
+
+  .footer__msg {
+    font-size: 1.5rem;
+  }
+
+  .footer_icons {
+    width: 12rem;
+  }
+
+  .footer__credits {
+    font-size: 14px;
+    margin: 1.5rem 1rem 0rem 1rem;
+    justify-content: space-evenly;
   }
 }
