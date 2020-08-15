@@ -30,6 +30,10 @@ body {
   background: var(--main-bg);
   min-width: 375px;
 }
+/* 
+from 0px up to 426px
+ */
+
 /*  TODO: On hover, try the glitch effect */
 
 .hero {
@@ -549,6 +553,9 @@ body {
   margin-top: 7px;
 }
 
+/* 
+from 426px up to 767px
+ */
 @media screen and (min-width: 426px) {
   .contact__cooperate {
     max-width: 26em;
@@ -560,7 +567,10 @@ body {
   }
 }
 
-@media screen and (max-width: 599px) {
+/* 
+up to 767px
+ */
+@media screen and (max-width: 767px) {
   header {
     box-sizing: border-box;
     height: 5rem;
@@ -575,7 +585,7 @@ body {
   }
 }
 
-/* @media screen and (min-width: 500px) {
+@media screen and (min-width: 768px) {
   header {
     box-sizing: border-box;
     height: 7rem;
@@ -608,6 +618,3 @@ body {
     margin-bottom: 3rem;
   }
 }
-
-@media screen and (min-width: 768px) {
-} */
