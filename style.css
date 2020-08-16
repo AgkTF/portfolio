@@ -598,6 +598,9 @@ up to 767px
   }
 }
 
+/* 
+from 768px up to 1119px
+ */
 @media screen and (min-width: 768px) {
   header {
     box-sizing: border-box;
@@ -630,6 +633,8 @@ up to 767px
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: center;
+    max-width: 700px;
+    margin: auto;
   }
 
   .skill__container {
@@ -651,6 +656,8 @@ up to 767px
     flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
+    max-width: 700px;
+    margin: auto;
   }
 
   .contact__subtitle {
@@ -680,7 +687,79 @@ up to 767px
 
   .footer__credits {
     font-size: 14px;
-    margin: 1.5rem 1rem 0rem 1rem;
+    width: 40rem;
+    margin: 1.5rem auto 0rem;
     justify-content: space-evenly;
+  }
+}
+
+/* TODO: hero image position  */
+/* @media screen and (min-width: 845px) {
+  .hero {
+    height: 769px;
+  }
+} */
+
+@media screen and (min-width: 1120px) {
+  header {
+    height: 13rem;
+  }
+  .hero {
+    height: 700px;
+  }
+
+  .hero__content {
+    font-size: 2.5rem;
+    margin-top: 4rem;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    bottom: 0;
+    right: 3rem;
+  }
+
+  .skills__boxes {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .projects__boxes {
+    max-width: 67rem;
+    margin: auto;
+  }
+
+  .contact__cooperate {
+    max-width: 34em;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .hero {
+    height: 775px;
+    background-position: center 90%;
+  }
+
+  header {
+    max-width: 1366px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    height: 850px;
+    background-position: center 160%;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .hero {
+    height: 1077px;
+    background-position: center 160%;
   }
 }
