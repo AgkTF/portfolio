@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 
 @font-face {
   font-family: "Cabin", sans-serif;
@@ -10,9 +9,9 @@
 }
 
 @font-face {
-  font-family: "Ubuntu", sans-serif;
-  src: local("Ubuntu"),
-    url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+  font-family: "Poppins", sans-serif;
+  src: local("Poppins"),
+    url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
   font-display: swap;
 }
 
@@ -102,7 +101,7 @@ from 0px up to 426px
 }
 
 .navbar--lg__item {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   color: var(--body--text);
   text-decoration: none;
@@ -134,7 +133,7 @@ from 0px up to 426px
 }
 
 .navbar__item {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 300;
   color: var(--body--text);
@@ -201,7 +200,7 @@ from 0px up to 426px
 } */
 
 .hero__content {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2rem;
   color: var(--body--text);
   text-align: center;
@@ -217,7 +216,7 @@ from 0px up to 426px
 }
 
 .sec__title {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   text-align: center;
   text-transform: uppercase;
@@ -229,11 +228,13 @@ from 0px up to 426px
 .em-dash-left {
   font-weight: normal;
   margin-right: 8px;
+  letter-spacing: -6px;
 }
 
 .em-dash-right {
   font-weight: normal;
-  margin-left: 8px;
+  margin-left: 4px;
+  letter-spacing: -6px;
 }
 
 .skill__container {
@@ -264,7 +265,7 @@ from 0px up to 426px
 .skill__box-title {
   color: var(--secondary);
   font-weight: bold;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   background: var(--body--text);
   box-shadow: 5px 5px 1px 0px var(--third-bg);
@@ -439,7 +440,7 @@ from 0px up to 426px
   margin-bottom: 6px;
   color: var(--main-bg);
   font-weight: bold;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -465,7 +466,7 @@ from 0px up to 426px
 .left-title {
   color: var(--third-bg);
   font-weight: bold;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
 }
 
@@ -603,7 +604,7 @@ from 0px up to 426px
 }
 
 .logo-footer {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--body--text);
   font-size: 2rem;
   text-decoration: none;
