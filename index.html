@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="css/libs/hamburgers-master/dist/hamburgers.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Agk.JS | Let's Build something awesome with JS</title>
   </head>
   <body>
@@ -38,10 +39,17 @@
 
         <nav>
           <div class="navbar--large">
-            <a href="" class="navbar--lg__item">skills & Tools</a>
-            <a href="" class="navbar--lg__item">projects</a>
-            <a href="" class="navbar--lg__item">contact me</a>
-            <a href="" class="navbar--lg__item">blog</a>
+            <a href="#skills" class="navbar--lg__item">skills & Tools</a>
+            <a href="#projects" class="navbar--lg__item">projects</a>
+            <a href="#contact" class="navbar--lg__item">contact me</a>
+            <a
+              href="https://blog.agktf.com"
+              target="_blank"
+              rel="noreferrer"
+              rel="noopener"
+              class="navbar--lg__item"
+              >blog</a
+            >
           </div>
 
           <div class="navbar--mobile navbar--mobile--hidden">
@@ -59,19 +67,25 @@
             </div>
 
             <div class="navbar__menu--mobile navbar__menu--mobile-hidden">
-              <a href="" class="navbar__item">
+              <a href="#skills" class="navbar__item">
                 <img src="images/skills.svg" alt="skills icon" />
                 Skills & Tools
               </a>
-              <a href="" class="navbar__item">
+              <a href="#projects" class="navbar__item">
                 <img src="images/projects.svg" alt="projects icon" />
                 Projects</a
               >
-              <a href="" class="navbar__item">
+              <a href="#contact" class="navbar__item">
                 <img src="images/contact.svg" alt="contact me icon" />
                 Contact Me</a
               >
-              <a href="" class="navbar__item">
+              <a
+                href="https://blog.agktf.com"
+                target="_blank"
+                rel="noreferrer"
+                rel="noopener"
+                class="navbar__item"
+              >
                 <img src="images/blog (1).svg" alt="blog icon" />
                 Blog</a
               >
@@ -87,14 +101,14 @@
       </p>
     </section>
 
-    <section class="skills">
+    <section id="skills" class="skills">
       <p class="sec__title">
         <span class="em-dash-left">&mdash;&mdash;&mdash;</span>skills &
         tools<span class="em-dash-right">&mdash;&mdash;&mdash;</span>
       </p>
 
       <div class="skills__boxes">
-        <div class="skill__container">
+        <div class="skill__container" data-aos="zoom-in-up">
           <button class="skill__box-title">
             <span
               ><img
@@ -151,7 +165,7 @@
           </div>
         </div>
 
-        <div class="skill__container">
+        <div class="skill__container" data-aos="zoom-in-up">
           <button class="skill__box-title">
             <span
               ><img
@@ -193,7 +207,7 @@
               />
 
               <img
-                src="./images/postgresql-plain-wordmark.svg"
+                src="./images/postgresql-original-wordmark.svg"
                 alt="postgresql logo"
                 class="skill-logo"
                 loading="lazy"
@@ -202,7 +216,7 @@
           </div>
         </div>
 
-        <div class="skill__container">
+        <div class="skill__container" data-aos="zoom-in-up">
           <button class="skill__box-title">
             <span
               ><img
@@ -258,7 +272,7 @@
       </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <p class="sec__title">
         <span class="em-dash-left">&mdash;&mdash;&mdash;</span>Projects<span
           class="em-dash-right"
@@ -267,7 +281,7 @@
       </p>
 
       <div class="projects__boxes">
-        <div class="project__container">
+        <div class="project__container" data-aos="fade-right">
           <div class="project__box">
             <div class="project__img">
               <img
@@ -308,7 +322,7 @@
           </div>
         </div>
 
-        <div class="project__container">
+        <div class="project__container" data-aos="fade-left">
           <div class="project__box">
             <div class="project__img">
               <img
@@ -349,7 +363,7 @@
           </div>
         </div>
 
-        <div class="project__container">
+        <div class="project__container" data-aos="fade-right">
           <div class="project__box">
             <div class="project__img">
               <img
@@ -390,7 +404,7 @@
           </div>
         </div>
 
-        <div class="project__container">
+        <div class="project__container" data-aos="fade-left">
           <div class="project__box">
             <div class="project__img">
               <img
@@ -431,7 +445,7 @@
           </div>
         </div>
 
-        <div class="project__container">
+        <div class="project__container" data-aos="fade-right">
           <div class="project__box">
             <div class="project__img">
               <img
@@ -474,7 +488,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact" data-aos="fade-right">
       <p class="sec__title">
         <span class="em-dash-left">&mdash;&mdash;&mdash;</span>Contact Me<span
           class="em-dash-right"
@@ -521,7 +535,7 @@
       </form>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
       <a href="https://agktf.com" class="logo-footer">Agk.</a>
 
       <h4 class="footer__msg">
@@ -571,5 +585,9 @@
     </footer>
 
     <script src="./JS/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
