@@ -32,3 +32,15 @@ function addClass(e) {
 }
 
 mql.addListener(addClass);
+
+// Burger button controller
+const burgerBtn = document.querySelector(".hamburger");
+const navbarMob = document.querySelector(".navbar--mobile");
+const mobileMenu = document.querySelector(".navbar__menu--mobile");
+
+burgerBtn.addEventListener("click", () => {
+  burgerBtn.classList.toggle("is-active");
+
+  mobileMenu.classList.toggle("navbar__menu--mobile-hidden");
+  navbarMob.classList.toggle("navbar--mobile--hidden");
+});

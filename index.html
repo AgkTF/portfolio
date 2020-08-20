@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
       integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="css/libs/hamburgers-master/dist/hamburgers.css"
     />
     <title>Agk.JS | Let's Build something awesome with JS</title>
   </head>
@@ -31,6 +35,48 @@
             <i class="fab fa-github social_icons"></i>
           </a>
         </div>
+
+        <nav>
+          <div class="navbar--large">
+            <a href="" class="navbar--lg__item">skills & Tools</a>
+            <a href="" class="navbar--lg__item">projects</a>
+            <a href="" class="navbar--lg__item">contact me</a>
+            <a href="" class="navbar--lg__item">blog</a>
+          </div>
+
+          <div class="navbar--mobile navbar--mobile--hidden">
+            <div
+              class="hamburger hamburger--arrow"
+              tabindex="0"
+              aria-label="Menu"
+              role="button"
+              aria-controls="navigation"
+              aria-expanded="true/false"
+            >
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
+
+            <div class="navbar__menu--mobile navbar__menu--mobile-hidden">
+              <a href="" class="navbar__item">
+                <img src="images/skills.svg" alt="skills icon" /> Skills &
+                Tools</a
+              >
+              <a href="" class="navbar__item">
+                <img src="images/projects.svg" alt="projects icon" />
+                Projects</a
+              >
+              <a href="" class="navbar__item">
+                <img src="images/contact.svg" alt="contact me icon" /> Contact
+                Me</a
+              >
+              <a href="" class="navbar__item">
+                <img src="images/blog (1).svg" alt="blog icon" /> Blog</a
+              >
+            </div>
+          </div>
+        </nav>
       </header>
 
       <p class="hero__content">
