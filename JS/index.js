@@ -16,23 +16,6 @@ projectTitleBtns.forEach((btn, index) => {
   });
 });
 
-let mql = window.matchMedia("screen and (min-width: 768px)");
-console.log(mql.matches);
-
-function addClass(e) {
-  if (e.matches) {
-    skillBoxTitles.forEach((title) => {
-      title.classList.add("skill__box-title-darkSh");
-    });
-
-    skillBoxes.forEach((box) => {
-      box.classList.add("skills__box-visible");
-    });
-  }
-}
-
-mql.addListener(addClass);
-
 // Burger button controller
 const burgerBtn = document.querySelector(".hamburger");
 const navbarMob = document.querySelector(".navbar--mobile");

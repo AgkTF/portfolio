@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
 
 @font-face {
   font-family: "Cabin", sans-serif;
@@ -76,7 +76,7 @@ from 0px up to 426px
   /* position: absolute;
   bottom: 0;
   left: 1rem; */
-  padding: 8px 0 0 8px;
+  padding: 12px 0 0 12px;
 }
 
 /* .navigation { */
@@ -88,10 +88,12 @@ from 0px up to 426px
   min-width: 14rem;
   max-width: 40%;
   border-radius: 5px;
+  box-shadow: 2px 1px 12px 1px var(--third-bg);
 }
 
 .navbar--mobile--hidden {
   background: none;
+  box-shadow: none;
 }
 
 .navbar--large {
@@ -103,9 +105,21 @@ from 0px up to 426px
   font-size: 1rem;
   color: var(--body--text);
   text-decoration: none;
-
   cursor: pointer;
   text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar--large .navbar--lg__item {
+  transition: opacity 0.2s, font-size 0.2s;
+}
+
+.navbar--large:hover .navbar--lg__item:hover {
+  font-size: 18px;
+}
+
+.navbar--large:hover .navbar--lg__item:not(:hover) {
+  opacity: 0.4;
 }
 
 .navbar__menu--mobile {
@@ -121,6 +135,7 @@ from 0px up to 426px
 .navbar__item {
   font-family: "Ubuntu", sans-serif;
   font-size: 20px;
+  font-weight: 300;
   color: var(--body--text);
   text-decoration: none;
   display: flex;
@@ -136,6 +151,14 @@ from 0px up to 426px
 
 .navbar__item:last-child {
   padding: 1rem 0 2rem 0;
+}
+
+.navbar__menu--mobile .navbar__item {
+  transition: opacity 0.2s;
+}
+
+.navbar__menu--mobile:hover .navbar__item:not(:hover) {
+  opacity: 0.5;
 }
 
 .icons {
@@ -304,15 +327,12 @@ from 0px up to 426px
 .skills__box-visible {
   display: block;
   max-width: 21rem;
-
-  /* height: 100%;
-  opacity: 1; */
 }
 
 .skill__box-text {
   font-family: "Cabin", sans-serif;
   color: var(--body--text);
-  margin-top: 2em;
+  margin-top: 2.2em;
   line-height: 1.5em;
   text-align: center;
 }
@@ -408,7 +428,7 @@ from 0px up to 426px
   top: 8px;
   left: 8px;
   opacity: 0;
-  transition: all ease-in 1s;
+  transition: all ease-in 0.25s;
   margin: 0 auto;
   pointer-events: none;
 }
@@ -537,24 +557,27 @@ from 0px up to 426px
 
 .form__btn {
   background: var(--third-bg);
-  box-shadow: 2px -2px 1px 0px #718096;
+  border-bottom: 4px solid #718096;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   color: var(--body--text);
   outline: none;
   font-size: 1rem;
   font-weight: normal;
   font-family: "Cabin", sans-serif;
   padding: 1em;
-  border: none;
   width: 7em;
   cursor: pointer;
-  transition: box-shadow linear 0.3s;
+  transition: all ease-in-out 0.1s;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
 .form__btn:hover {
-  box-shadow: none;
+  border-bottom-width: 0;
+  margin-top: 3px;
 }
 
 .footer {
@@ -700,6 +723,10 @@ from 768px up to 1119px
     margin-top: 4rem;
   }
 
+  .skill__box-title {
+    box-shadow: 5px 5px 1px 0px var(--main-bg);
+  }
+
   .skills__boxes {
     flex-direction: row;
     flex-wrap: wrap;
@@ -721,6 +748,8 @@ from 768px up to 1119px
 
   .skill__box {
     margin: 0;
+    display: block;
+    max-width: 21rem;
   }
 
   .projects__boxes {
@@ -784,7 +813,7 @@ from 768px up to 1119px
     align-items: center;
     justify-content: space-between;
     max-width: 50%;
-    margin-left: 20%;
+    margin: 0 auto;
   }
 }
 
