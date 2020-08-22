@@ -498,13 +498,19 @@
         want to say hi. Then just do it and contact me.
       </p>
 
-      <form action="" class="contact__form">
+      <form
+        action="https://getform.io/f/ceef3c56-811d-4a4a-9cbc-41addc2a753d"
+        class="contact__form"
+        method="POST"
+        accept-charset="UTF-8"
+      >
         <input
-          type="text"
+          type="email"
           name="email"
           id="email"
           placeholder="Email"
           class="field"
+          required
         />
         <input
           type="text"
@@ -512,6 +518,7 @@
           id="subject"
           placeholder="Subject"
           class="field"
+          minlength="4"
         />
         <textarea
           name="message"

@@ -559,7 +559,7 @@ from 0px up to 426px
   margin: 1.5em 2em 4em 2em;
   align-items: center;
   max-width: 352px;
-  transition: all linear 0.5s;
+  transition: all ease-in-out 0.2s;
 }
 
 .field {
