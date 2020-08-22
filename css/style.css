@@ -73,13 +73,9 @@ from 0px up to 426px
 }
 
 .hamburger {
-  /* position: absolute;
-  bottom: 0;
-  left: 1rem; */
   padding: 12px 0 0 12px;
 }
 
-/* .navigation { */
 .navbar--mobile {
   position: relative;
   top: 1.2rem;
@@ -426,6 +422,14 @@ from 0px up to 426px
   cursor: pointer;
 }
 
+.project__img {
+  width: 320px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+  transition: all ease-in-out 0.25s;
+}
+
 .project__container:hover .overlay {
   transform: translateY(0%);
 }
@@ -450,25 +454,21 @@ from 0px up to 426px
   box-sizing: border-box;
   font-family: "Cabin", sans-serif;
   align-items: center;
-  justify-content: space-between;
   position: absolute;
   top: 9px;
   left: 9px;
   opacity: 1;
   transition: all ease-in-out 0.25s;
-  margin: 0 auto;
   transform: translateY(108%);
 }
 
 .overlay__content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .overlay__title {
   margin: 0;
-  margin-bottom: 6px;
   color: var(--main-bg);
   font-weight: bold;
   font-family: "Poppins", sans-serif;
@@ -476,34 +476,8 @@ from 0px up to 426px
   text-transform: uppercase;
 }
 
-.overlay__subtitle {
-  margin: 0;
-  margin-bottom: 12px;
-}
-
-.project__img {
-  width: 320px;
-  height: 180px;
-  object-fit: cover;
-  object-position: center;
-  transition: all ease-in-out 0.25s;
-}
-
-.over__icons {
-  font-size: 1.5rem;
-  color: var(--main-bg);
-}
-
-.left-title {
-  color: var(--third-bg);
-  font-weight: bold;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-}
-
 .tags {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   gap: 12px;
   max-height: 80px;
@@ -519,6 +493,7 @@ from 0px up to 426px
   background: var(--main-bg);
   padding: 2px;
   box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .right-content {
@@ -527,12 +502,19 @@ from 0px up to 426px
   font-size: 14px;
   font-weight: normal;
   margin: 0;
+  text-align: justify;
+  margin-bottom: 8px;
 }
 
 .overlay__buttons {
   display: flex;
-  margin: 8px auto 8px;
-  gap: 6rem;
+  margin-top: 8px;
+  justify-content: space-evenly;
+}
+
+.over__icons {
+  font-size: 1.5rem;
+  color: var(--main-bg);
 }
 
 .square--small {
