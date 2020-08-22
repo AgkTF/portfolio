@@ -139,9 +139,13 @@ from 0px up to 426px
   color: var(--body--text);
   text-decoration: none;
   display: flex;
-  gap: 8px;
-  align-items: flex-start;
   cursor: pointer;
+  /* gap: 8px; */
+  /* align-items: flex-start; */
+}
+
+.navbar__item img {
+  margin-right: 8px;
 }
 
 .navbar__item:not(:last-child) {
@@ -163,10 +167,14 @@ from 0px up to 426px
 
 .icons {
   display: flex;
-  gap: 1rem;
   position: absolute;
   bottom: 0;
   right: 1rem;
+  /* gap: 1rem; */
+}
+
+.icons a:nth-child(2) {
+  margin: 0 1rem;
 }
 
 .square:nth-child(1):hover {
@@ -189,15 +197,6 @@ from 0px up to 426px
   text-align: center;
   color: var(--body--text);
 }
-
-/* .icons--overlay {
-  width: 16px;
-  height: 16px;
-  padding: 8px 8px;
-  border: 1px solid var(--body--text);
-  text-align: center;
-  color: var(--main-bg);
-} */
 
 .hero__content {
   font-family: "Poppins", sans-serif;
@@ -243,6 +242,10 @@ from 0px up to 426px
   align-items: center;
 }
 
+.skill__container:nth-child(2) {
+  margin: 1.5rem 0;
+}
+
 .skill__container:hover .chevron-left {
   animation: pointingR 1s infinite;
   visibility: visible;
@@ -259,7 +262,7 @@ from 0px up to 426px
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  /* gap: 1.5rem; */
 }
 
 .skill__box-title {
@@ -268,7 +271,6 @@ from 0px up to 426px
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   background: var(--body--text);
-  box-shadow: 5px 5px 1px 0px var(--third-bg);
   text-align: center;
   box-sizing: border-box;
   padding: 11px 16px;
@@ -277,6 +279,20 @@ from 0px up to 426px
   outline: none;
   border: none;
   width: fit-content;
+  box-shadow: 0 0 0 0 rgba(230, 237, 255, 0.7);
+  animation: pulse 1.75s infinite cubic-bezier(0.66, 0, 0, 1);
+
+  /* box-shadow: 5px 5px 1px 0px var(--third-bg); */
+}
+
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 10px rgba(230, 237, 255, 0);
+  }
+}
+
+.skill__box-title:focus {
+  animation: none;
 }
 
 .skill__box-title:focus .chevron-left {
@@ -360,9 +376,20 @@ from 0px up to 426px
   width: 226px;
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5rem;
   justify-content: center;
   margin: auto;
+  /* gap: 2.5rem; */
+}
+.skills__logos img:nth-child(2) {
+  margin: 0 2.5rem;
+}
+
+.skills__logos img:nth-child(4) {
+  margin: 1.5rem 2.5rem 0 2.5rem;
+}
+
+.skills__logos img:nth-child(5) {
+  margin-top: 1.5rem;
 }
 
 .skill-logo {
@@ -374,12 +401,16 @@ from 0px up to 426px
   flex-direction: column;
   align-items: center;
   position: relative;
-  gap: 1.5rem;
+  /* gap: 1.5rem; */
 }
 
 .project__container {
   position: relative;
   overflow: hidden;
+}
+
+.project__container:nth-child(2n) {
+  margin: 1.5rem 0;
 }
 
 .project__box {
@@ -616,8 +647,8 @@ from 0px up to 426px
   font-size: 18px;
   color: var(--body--text);
   font-weight: lighter;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-top: 8px;
+  margin-bottom: 1.5rem;
 }
 
 .footer_icons {
@@ -726,7 +757,10 @@ from 768px up to 1119px
 
   .icons {
     right: 1.5rem;
-    gap: 1.5rem;
+    /* gap: 1.5rem; */
+  }
+  .icons a:nth-child(2) {
+    margin: 0 1.5rem;
   }
 
   .hero__content {
@@ -735,6 +769,7 @@ from 768px up to 1119px
 
   .skill__box-title {
     box-shadow: 5px 5px 1px 0px var(--main-bg);
+    animation: none;
   }
 
   .skills__boxes {
@@ -750,6 +785,10 @@ from 768px up to 1119px
     width: 21rem;
   }
 
+  .skill__container:nth-child(2) {
+    margin-left: 1.5rem;
+  }
+
   .sec__title {
     font-size: 2rem;
     margin-top: 8rem;
@@ -760,6 +799,11 @@ from 768px up to 1119px
     margin: 0;
     display: block;
     max-width: 21rem;
+  }
+
+  .project__container:nth-child(2n) {
+    margin-left: 1.5rem;
+    margin-top: 0;
   }
 
   .projects__boxes {
@@ -847,15 +891,29 @@ from 768px up to 1119px
   .icons {
     display: flex;
     flex-direction: column;
-    gap: 18px;
     position: absolute;
     bottom: 0;
     right: 3rem;
+    /* gap: 18px; */
+  }
+
+  .icons a:nth-child(2) {
+    margin: 18px 0;
   }
 
   .skills__boxes {
     max-width: 100%;
     margin: auto;
+  }
+
+  .skill__container:nth-child(2) {
+    margin: 0 1.5rem;
+  }
+
+  .project__container:nth-child(2n) {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 0;
   }
 
   .projects__boxes {
