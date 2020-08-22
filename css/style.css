@@ -447,7 +447,7 @@ from 0px up to 426px
 .overlay {
   width: 320px;
   height: 180px;
-  background: var(--dark-grey);
+  background: var(--body--text);
   display: flex;
   flex-direction: column;
   padding: 8px 24px;
@@ -515,6 +515,15 @@ from 0px up to 426px
 .over__icons {
   font-size: 1.5rem;
   color: var(--main-bg);
+  box-shadow: 2px 2px 3px 1px var(--third-bg);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.over__icons:hover {
+  box-shadow: 2px 2px 3px -1px var(--third-bg);
 }
 
 .square--small {
