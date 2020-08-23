@@ -39,37 +39,24 @@ from 0px up to 426px
 .hero {
   height: 538px;
   background-image: linear-gradient(rgba(6, 41, 70, 0.5), rgba(6, 41, 70, 0.5)),
-    url(../images/jesus-kiteque-wn-KYaHwcis-unsplash.jpg);
+    url(../images/hero-img-sm.jpg);
   background-clip: border-box;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.left__thing {
-  height: 80px;
-  width: 48px;
-  border-left: 5px solid var(--body--text);
-  border-top: 5px solid var(--body--text);
-  position: absolute;
-}
-
-.right__thing {
-  height: 80px;
-  width: 224px;
-  border-right: 5px solid var(--body--text);
-  border-top: 5px solid var(--body--text);
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
 .logo {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--body--text);
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: bold;
+  border-top: 5px solid var(--body--text);
+}
+
+.logo__div {
+  padding-top: 5px;
 }
 
 .hamburger {
@@ -136,8 +123,6 @@ from 0px up to 426px
   text-decoration: none;
   display: flex;
   cursor: pointer;
-  /* gap: 8px; */
-  /* align-items: flex-start; */
 }
 
 .navbar__item img {
@@ -166,7 +151,6 @@ from 0px up to 426px
   position: absolute;
   bottom: 0;
   right: 1rem;
-  /* gap: 1rem; */
 }
 
 .icons a:nth-child(2) {
@@ -258,7 +242,6 @@ from 0px up to 426px
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 1.5rem; */
 }
 
 .skill__box-title {
@@ -277,8 +260,6 @@ from 0px up to 426px
   width: fit-content;
   box-shadow: 0 0 0 0 rgba(230, 237, 255, 0.7);
   animation: pulse 1.75s infinite cubic-bezier(0.66, 0, 0, 1);
-
-  /* box-shadow: 5px 5px 1px 0px var(--third-bg); */
 }
 
 @keyframes pulse {
@@ -374,7 +355,6 @@ from 0px up to 426px
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-  /* gap: 2.5rem; */
 }
 .skills__logos img:nth-child(2) {
   margin: 0 2.5rem;
@@ -397,7 +377,6 @@ from 0px up to 426px
   flex-direction: column;
   align-items: center;
   position: relative;
-  /* gap: 1.5rem; */
 }
 
 .project__container {
@@ -502,7 +481,7 @@ from 0px up to 426px
   font-size: 14px;
   font-weight: normal;
   margin: 0;
-  text-align: justify;
+  text-align: center;
   margin-bottom: 8px;
 }
 
@@ -515,7 +494,7 @@ from 0px up to 426px
 .over__icons {
   font-size: 1.5rem;
   color: var(--main-bg);
-  box-shadow: 2px 2px 3px 1px var(--third-bg);
+  box-shadow: 1px 1px 2px 1px var(--third-bg);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -523,7 +502,7 @@ from 0px up to 426px
 }
 
 .over__icons:hover {
-  box-shadow: 2px 2px 3px -1px var(--third-bg);
+  box-shadow: 2px 2px 2px -1px var(--third-bg);
 }
 
 .square--small {
@@ -716,6 +695,7 @@ up to 767px
     height: 5rem;
     position: relative;
   }
+
   .logo {
     margin-left: 5rem;
   }
@@ -729,6 +709,14 @@ up to 767px
 from 768px up to 1119px
  */
 @media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(6, 41, 70, 0.5),
+        rgba(6, 41, 70, 0.5)
+      ),
+      url(../images/hero-img-md.jpg);
+  }
+
   header {
     box-sizing: border-box;
     height: 7rem;
@@ -741,14 +729,18 @@ from 768px up to 1119px
     max-width: 30%;
   }
 
+  .logo__div {
+    padding-top: 7px;
+  }
+
   .logo {
     margin-left: 6rem;
     font-size: 2rem;
+    border-top: 7px solid var(--body--text);
   }
 
   .icons {
     right: 1.5rem;
-    /* gap: 1.5rem; */
   }
   .icons a:nth-child(2) {
     margin: 0 1.5rem;
@@ -839,13 +831,6 @@ from 768px up to 1119px
   }
 }
 
-/* TODO: hero image position  */
-/* @media screen and (min-width: 845px) {
-  .hero {
-    height: 769px;
-  }
-} */
-
 @media screen and (min-width: 1024px) {
   .navbar--mobile {
     display: none;
@@ -885,7 +870,6 @@ from 768px up to 1119px
     position: absolute;
     bottom: 0;
     right: 3rem;
-    /* gap: 18px; */
   }
 
   .icons a:nth-child(2) {
@@ -921,6 +905,11 @@ from 768px up to 1119px
 @media screen and (min-width: 1366px) {
   .hero {
     height: 775px;
+    background-image: linear-gradient(
+        rgba(6, 41, 70, 0.5),
+        rgba(6, 41, 70, 0.5)
+      ),
+      url(../images/hero-img-md.jpg);
     background-position: center 90%;
   }
 
