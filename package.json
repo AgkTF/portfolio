@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postcss": "postcss ./css/style.css > ./build/style.min.css",
-    "build": "postcss ./css/style.css > ./build/style.min.css && babel JS/index.js -d ./build/js"
+    "build": "postcss ./css/style.css > ./build/style.min.css && babel JS/index.js -d ./build/js && cp -r ./images ./build/ && cp index.html ./build/"
   },
   "keywords": [
     "portfolio"

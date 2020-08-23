@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="The portfolio website of AgkTF." />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -17,7 +17,6 @@
   <body>
     <section class="hero">
       <header>
-        <!-- TODO: Fix the location of the left and right things on different screen sizes -->
         <div class="logo__div">
           <a href="https://agktf.com" class="logo">Agk.</a>
         </div>
@@ -278,13 +277,16 @@
       <div class="projects__boxes">
         <div class="project__container" data-aos="fade-right">
           <div class="project__box">
-            <div class="project__img">
-              <img
-                src="./images/2228176.webp"
-                alt="mobile app concept"
-                class="project__img"
-                loading="lazy"
-              />
+            <div>
+              <picture>
+                <source srcset="./images/2228176.webp 320w" type="image/webp" />
+                <img
+                  src="./images/2228176.jpg"
+                  alt="mobile app concept"
+                  class="project__img"
+                  loading="lazy"
+                />
+              </picture>
             </div>
           </div>
           <div class="overlay">
@@ -318,13 +320,19 @@
 
         <div class="project__container" data-aos="fade-left">
           <div class="project__box">
-            <div class="project__img">
-              <img
-                src="./images/movie_features_4x.webp"
-                alt="mobile app concept"
-                class="project__img"
-                loading="lazy"
-              />
+            <div>
+              <picture
+                ><source
+                  srcset="./images/movie_features_4x.webp 320w"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/movie_features_4x.jpg"
+                  alt="mobile app concept"
+                  class="project__img"
+                  loading="lazy"
+                />
+              </picture>
             </div>
           </div>
           <div class="overlay">
@@ -358,13 +366,19 @@
 
         <div class="project__container" data-aos="fade-right">
           <div class="project__box">
-            <div class="project__img">
-              <img
-                src="./images/movie-booking ui.webp"
-                alt="mobile app concept"
-                class="project__img"
-                loading="lazy"
-              />
+            <div>
+              <picture>
+                <source
+                  srcset="./images/movie-booking-ui.webp 320w"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/movie-booking-ui.png"
+                  alt="mobile app concept"
+                  class="project__img"
+                  loading="lazy"
+                />
+              </picture>
             </div>
           </div>
           <div class="overlay">
@@ -398,13 +412,16 @@
 
         <div class="project__container" data-aos="fade-left">
           <div class="project__box">
-            <div class="project__img">
-              <img
-                src="./images/4137692.webp"
-                alt="mobile app concept"
-                class="project__img"
-                loading="lazy"
-              />
+            <div>
+              <picture>
+                <source srcset="./images/4137692.webp 320w" type="image/webp" />
+                <img
+                  src="./images/4137692.jpg"
+                  alt="mobile app concept"
+                  class="project__img"
+                  loading="lazy"
+                />
+              </picture>
             </div>
           </div>
           <div class="overlay">
@@ -438,13 +455,19 @@
 
         <div class="project__container" data-aos="fade-right">
           <div class="project__box">
-            <div class="project__img">
-              <img
-                src="./images/movie-app-ui-1.webp"
-                alt="mobile app concept"
-                class="project__img"
-                loading="lazy"
-              />
+            <div>
+              <picture>
+                <source
+                  srcset="./images/movie-app-ui-1.webp 320w"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/movie-app-ui-1.png"
+                  alt="mobile app concept"
+                  class="project__img"
+                  loading="lazy"
+                />
+              </picture>
             </div>
           </div>
           <div class="overlay">
@@ -581,7 +604,7 @@
       </div>
     </footer>
 
-    <script src="./JS/index.js"></script>
+    <script src="js/index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

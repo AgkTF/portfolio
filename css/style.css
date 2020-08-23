@@ -40,7 +40,7 @@ from 0px up to 426px
 .hero {
   height: 538px;
   background-image: linear-gradient(rgba(6, 41, 70, 0.5), rgba(6, 41, 70, 0.5)),
-    url(../images/hero-img-sm.webp);
+    url(../images/hero-img-sm.jpg);
   background-clip: border-box;
   background-position: center;
   background-size: cover;
@@ -715,7 +715,7 @@ from 768px up to 1119px
         rgba(6, 41, 70, 0.5),
         rgba(6, 41, 70, 0.5)
       ),
-      url(../images/hero-img-md.webp);
+      url(../images/hero-img-md.jpg);
   }
 
   header {
@@ -910,7 +910,7 @@ from 768px up to 1119px
         rgba(6, 41, 70, 0.5),
         rgba(6, 41, 70, 0.5)
       ),
-      url(../images/hero-img-md.webp);
+      url(../images/hero-img-lg.jpg);
     background-position: center 90%;
   }
 
