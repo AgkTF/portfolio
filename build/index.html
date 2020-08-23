@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The portfolio website of AgkTF." />
+    <link rel="stylesheet" href="./style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Agk.JS | Let's Build something awesome with JS</title>
+  </head>
+  <body>
+    <section class="hero">
+      <header>
+        <div class="logo__div">
+          <a href="https://agktf.com" class="logo">Agk.</a>
+        </div>
+
+        <div class="icons">
+          <a href="https://www.facebook.com/agk2022" class="square">
+            <i class="fab fa-facebook-f social_icons"></i
+          ></a>
+          <a href="https://twitter.com/agkTF" class="square">
+            <i class="fab fa-twitter social_icons"></i>
+          </a>
+          <a href="https://github.com/AgkTF" class="square">
+            <i class="fab fa-github social_icons"></i>
+          </a>
+        </div>
+
+        <nav>
+          <div class="navbar--large">
+            <a href="#skills" class="navbar--lg__item">skills & Tools</a>
+            <a href="#projects" class="navbar--lg__item">projects</a>
+            <a href="#contact" class="navbar--lg__item">contact me</a>
+            <a
+              href="https://blog.agktf.com"
+              target="_blank"
+              rel="noreferrer"
+              rel="noopener"
+              class="navbar--lg__item"
+              >blog</a
+            >
+          </div>
+
+          <div class="navbar--mobile navbar--mobile--hidden">
+            <div
+              class="hamburger hamburger--arrow"
+              tabindex="0"
+              aria-label="Menu"
+              role="button"
+              aria-controls="navigation"
+              aria-expanded="true/false"
+            >
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
+
+            <div class="navbar__menu--mobile navbar__menu--mobile-hidden">
+              <a href="#skills" class="navbar__item">
+                <img src="images/skills.svg" alt="skills icon" />
+                Skills & Tools
+              </a>
+              <a href="#projects" class="navbar__item">
+                <img src="images/projects.svg" alt="projects icon" />
+                Projects</a
+              >
+              <a href="#contact" class="navbar__item">
+                <img src="images/contact.svg" alt="contact me icon" />
+                Contact Me</a
+              >
+              <a
+                href="https://blog.agktf.com"
+                target="_blank"
+                rel="noreferrer"
+                rel="noopener"
+                class="navbar__item"
+              >
+                <img src="images/blog (1).svg" alt="blog icon" />
+                Blog</a
+              >
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <p class="hero__content">
+        I'm Ahmed <br />
+        Full-Stack <span id="hero__js">JavaScript</span><br />
+        Developer
+      </p>
+    </section>
+
+    <section id="skills" class="skills">
+      <p class="sec__title">
+        <span class="em-dash-left">&mdash;&mdash;&mdash;&mdash;</span>skills &
+        tools<span class="em-dash-right">&mdash;&mdash;&mdash;&mdash;</span>
+      </p>
+
+      <div class="skills__boxes">
+        <div class="skill__container">
+          <button class="skill__box-title">
+            <span
+              ><img
+                src="./images/chevron.svg"
+                alt="chevron"
+                class="chevron chevron-left" /></span
+            >Front-end development<span
+              ><img
+                src="./images/chevron.svg"
+                alt="chevron"
+                class="chevron chevron-right"
+            /></span>
+          </button>
+          <div class="skill__box">
+            <p class="skill__box-text">
+              From design concepts & just ideas to full-fledged, pixel perfect
+              websites and apps using the perfect frameworks and libraries for
+              the job.
+            </p>
+
+            <div class="skills__logos">
+              <div class="first-row">
+                <img
+                  src="./images/javascript-plain.svg"
+                  alt="javascript logo"
+                  class="skill__logo"
+                  loading="lazy"
+                />
+                <img
+                  src="./images/html5-plain.svg"
+                  alt="HTML5 logo"
+                  class="skill__logo"
+                  loading="lazy"
+                />
+                <img
+                  src="./images/css3-plain.svg"
+                  alt="CSS3 logo"
+                  class="skill__logo"
+                  loading="lazy"
+                />
+              </div>
+              <div class="sec-row">
+                <img
+                  src="./images/react-original.svg"
+                  alt="Retrial__logoact logo"
+                  class="skill__logo"
+                  loading="lazy"
+                />
+                <img
+                  src="./images/sass-original.svg"
+                  alt="SASS logo"
+                  class="skill__logo"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill__container">
+          <button class="skill__box-title">
+            <span
+              ><img
+                src="./images/chevron.svg"
+                alt="chevron"
+                class="chevron chevron-left" /></span
+            >Back-end development<span
+              ><img
+                src="./images/chevron.svg"
+                alt="chevron"
+                class="chevron chevron-right"
+            /></span>
+          </button>
+          <div class="skill__box">
+            <p class="skill__box-text">
+              Designing APIs and managing the integration between the client &
+              server sides of the app. Plus working with SQL & NoSQL databases
+              for scalable and easy-to-maintain apps.
+            </p>
+
+            <div class="skills__logos">
+              <div class="first-row">
+                <img
+                  src="./images/nodejs-plain.svg"
+                  alt="Node logo"
+                  class="skill__logo"
+                  loading="lazy"
+                />
+                <img
+                  src="./images/express-original-wordmark.svg"
+                  alt="express logo"
+                  class="skill__logo"
+                  loading="lazy"
+                />
+                <img
+                  src="./images/mongodb-plain-wordmark.svg"
+                  alt="Mongodb logo"
+                  class="skill__logo"
+                  loading="lazy"
+                />
+              </div>
+              <div class="sec-row">
+                <img
+                  src="./images/postgresql-original-wordmark.svg"
+                  alt="postgresql logo"
+                  class="skill__logo"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill__container">
+          <button class="skill__box-title">
+            <span
+              ><img
+                src="./images/chevron.svg"
+                alt="chevron"
+                class="chevron chevron-left" /></span
+            >Tools<span
+              ><img
+                src="./images/chevron.svg"
+                alt="chevron"
+                class="chevron chevron-right"
+            /></span>
+          </button>
+          <div class="skill__box">
+            <p class="skill__box-text">
+              Using the right tools comes a long way in our industry.
+            </p>
+
+            <div class="skills__logos" style="margin-top: 3.5rem;">
+              <div class="first-row">
+                <img
+                  src="./images/linux-original.svg"
+                  alt="linux logo"
+                  class="skill__logo"
+                  loading="lazy"
+                />
+                <img
+                  src="./images/git-plain-wordmark.svg"
+                  alt="git logo"
+                  class="skill__logo"
+                  loading="lazy"
+                />
+                <img
+                  src="./images/github-original-wordmark.svg"
+                  alt="github logo"
+                  class="skill__logo"
+                  loading="lazy"
+                />
+              </div>
+              <div class="sec-row">
+                <img
+                  src="./images/iconfinder_terminal_298878.svg"
+                  alt="terminal logo"
+                  class="skill__logo"
+                  loading="lazy"
+                />
+                <img
+                  src="./images/adobe-xd-1.svg"
+                  alt="xd logo"
+                  class="skill__logo"
+                  loading="lazy"
+                />
+                <img
+                  src="./images/postcss (1).svg"
+                  alt="postcss logo"
+                  class="skill__logo"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <p class="sec__title">
+        <span class="em-dash-left">&mdash;&mdash;&mdash;&mdash;</span
+        >Projects<span class="em-dash-right">&mdash;&mdash;&mdash;&mdash;</span>
+      </p>
+
+      <div class="projects__boxes">
+        <div class="project__container" data-aos="fade-right">
+          <div class="project__box">
+            <div>
+              <picture>
+                <source srcset="./images/2228176.webp 320w" type="image/webp" />
+                <img
+                  src="./images/2228176.jpg"
+                  alt="mobile app concept"
+                  class="project__img"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="overlay">
+            <h1 class="overlay__title">Mobile App Concept</h1>
+            <div class="overlay__content">
+              <p class="right-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam
+                voluptas deleniti harum temporibus, molestias ab perspiciatis
+                asperiores rem odit, dignissimos maxime.
+              </p>
+
+              <div class="tags">
+                <div class="tag">CSS</div>
+                <div class="tag">React</div>
+                <div class="tag">HTML5</div>
+                <div class="tag">JS</div>
+                <div class="tag">Gatsby</div>
+              </div>
+
+              <div class="overlay__buttons">
+                <button href="https://github.com/AgkTF" class="over__icons">
+                  <i class="fab fa-github"></i>
+                </button>
+                <button href="https://agktf.com" class="over__icons">
+                  <i class="fas fa-globe"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project__container" data-aos="fade-left">
+          <div class="project__box">
+            <div>
+              <picture
+                ><source
+                  srcset="./images/movie_features_4x.webp 320w"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/movie_features_4x.jpg"
+                  alt="mobile app concept"
+                  class="project__img"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="overlay">
+            <h1 class="overlay__title">Mobile App Concept</h1>
+            <div class="overlay__content">
+              <p class="right-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam
+                voluptas deleniti harum temporibus, molestias ab perspiciatis
+                asperiores rem odit, dignissimos maxime.
+              </p>
+
+              <div class="tags">
+                <div class="tag">CSS</div>
+                <div class="tag">React</div>
+                <div class="tag">HTML5</div>
+                <div class="tag">JS</div>
+                <div class="tag">Gatsby</div>
+              </div>
+
+              <div class="overlay__buttons">
+                <button href="https://github.com/AgkTF" class="over__icons">
+                  <i class="fab fa-github"></i>
+                </button>
+                <button href="https://agktf.com" class="over__icons">
+                  <i class="fas fa-globe"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project__container" data-aos="fade-right">
+          <div class="project__box">
+            <div>
+              <picture>
+                <source
+                  srcset="./images/movie-booking-ui.webp 320w"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/movie-booking-ui.png"
+                  alt="mobile app concept"
+                  class="project__img"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="overlay">
+            <h1 class="overlay__title">Mobile App Concept</h1>
+            <div class="overlay__content">
+              <p class="right-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam
+                voluptas deleniti harum temporibus, molestias ab perspiciatis
+                asperiores rem odit, dignissimos maxime.
+              </p>
+
+              <div class="tags">
+                <div class="tag">CSS</div>
+                <div class="tag">React</div>
+                <div class="tag">HTML5</div>
+                <div class="tag">JS</div>
+                <div class="tag">Gatsby</div>
+              </div>
+
+              <div class="overlay__buttons">
+                <button href="https://github.com/AgkTF" class="over__icons">
+                  <i class="fab fa-github"></i>
+                </button>
+                <button href="https://agktf.com" class="over__icons">
+                  <i class="fas fa-globe"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project__container" data-aos="fade-left">
+          <div class="project__box">
+            <div>
+              <picture>
+                <source srcset="./images/4137692.webp 320w" type="image/webp" />
+                <img
+                  src="./images/4137692.jpg"
+                  alt="mobile app concept"
+                  class="project__img"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="overlay">
+            <h1 class="overlay__title">Mobile App Concept</h1>
+            <div class="overlay__content">
+              <p class="right-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam
+                voluptas deleniti harum temporibus, molestias ab perspiciatis
+                asperiores rem odit, dignissimos maxime.
+              </p>
+
+              <div class="tags">
+                <div class="tag">CSS</div>
+                <div class="tag">React</div>
+                <div class="tag">HTML5</div>
+                <div class="tag">JS</div>
+                <div class="tag">Gatsby</div>
+              </div>
+
+              <div class="overlay__buttons">
+                <button href="https://github.com/AgkTF" class="over__icons">
+                  <i class="fab fa-github"></i>
+                </button>
+                <button href="https://agktf.com" class="over__icons">
+                  <i class="fas fa-globe"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project__container" data-aos="fade-right">
+          <div class="project__box">
+            <div>
+              <picture>
+                <source
+                  srcset="./images/movie-app-ui-1.webp 320w"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/movie-app-ui-1.png"
+                  alt="mobile app concept"
+                  class="project__img"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="overlay">
+            <h1 class="overlay__title">Mobile App Concept</h1>
+            <div class="overlay__content">
+              <p class="right-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam
+                voluptas deleniti harum temporibus, molestias ab perspiciatis
+                asperiores rem odit, dignissimos maxime.
+              </p>
+
+              <div class="tags">
+                <div class="tag">CSS</div>
+                <div class="tag">React</div>
+                <div class="tag">HTML5</div>
+                <div class="tag">JS</div>
+                <div class="tag">Gatsby</div>
+              </div>
+
+              <div class="overlay__buttons">
+                <button href="https://github.com/AgkTF" class="over__icons">
+                  <i class="fab fa-github"></i>
+                </button>
+                <button href="https://agktf.com" class="over__icons">
+                  <i class="fas fa-globe"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" data-aos="fade-right">
+      <p class="sec__title">
+        <span class="em-dash-left">&mdash;&mdash;&mdash;</span>Contact Me<span
+          class="em-dash-right"
+          >&mdash;&mdash;&mdash;</span
+        >
+      </p>
+
+      <h4 class="contact__subtitle">
+        I'm currently available for freelance work.
+      </h4>
+
+      <p class="contact__cooperate">
+        If you have any new project ideas, want to revive an old project or just
+        want to say hi. Then just do it and contact me.
+      </p>
+
+      <form
+        action="https://getform.io/f/ceef3c56-811d-4a4a-9cbc-41addc2a753d"
+        class="contact__form"
+        method="POST"
+        accept-charset="UTF-8"
+      >
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          class="field"
+          required
+        />
+        <input
+          type="text"
+          name="subject"
+          id="subject"
+          placeholder="Subject"
+          class="field"
+          minlength="4"
+        />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="12"
+          placeholder="Enter your message"
+          class="field area-field"
+        ></textarea>
+        <button class="form__btn">
+          <i class="far fa-paper-plane"></i>
+          <span> &nbsp; SEND</span>
+        </button>
+      </form>
+    </section>
+
+    <footer class="footer" data-aos="fade-up">
+      <a href="https://agktf.com" class="logo-footer">Agk.</a>
+
+      <h4 class="footer__msg">
+        Giving back to the community
+      </h4>
+
+      <div class="footer_icons">
+        <a href="https://www.facebook.com/agk2022" class="square">
+          <i class="fab fa-facebook-f social_icons"></i
+        ></a>
+        <a href="https://twitter.com/agkTF" class="square">
+          <i class="fab fa-twitter social_icons"></i>
+        </a>
+        <a href="https://github.com/AgkTF" class="square">
+          <i class="fab fa-github social_icons"></i>
+        </a>
+      </div>
+
+      <div class="footer__credits">
+        <p>
+          Designed & Developed <br /><span class="credit_aligned">
+            with &nbsp; <i class="fas fa-heart footer_heart"></i
+          ></span>
+        </p>
+        <p>
+          Hosted on<br />
+          <img
+            src="images/netlify-ar21.svg"
+            alt="netlify logo"
+            class="netlify_footer"
+            loading="lazy"
+          />
+        </p>
+        <p>
+          Hero Photo by
+          <a href="https://unsplash.com/@jesuskiteque" class="footer_links"
+            >Jesus Kiteque</a
+          ><br />
+          <span
+            >on
+            <a href="https://unsplash.com/" class="footer_links credit_aligned">
+              Unsplash</a
+            ></span
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
