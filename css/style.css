@@ -1,3 +1,4 @@
+@import "libs/hamburgers-master/dist/hamburgers.css";
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 
@@ -39,7 +40,7 @@ from 0px up to 426px
 .hero {
   height: 538px;
   background-image: linear-gradient(rgba(6, 41, 70, 0.5), rgba(6, 41, 70, 0.5)),
-    url(../images/hero-img-sm.jpg);
+    url(../images/hero-img-sm.webp);
   background-clip: border-box;
   background-position: center;
   background-size: cover;
@@ -65,7 +66,7 @@ from 0px up to 426px
 
 .navbar--mobile {
   position: relative;
-  top: 1.2rem;
+  top: 6rem;
   left: 1rem;
   background: #062844e0;
   min-width: 14rem;
@@ -714,7 +715,7 @@ from 768px up to 1119px
         rgba(6, 41, 70, 0.5),
         rgba(6, 41, 70, 0.5)
       ),
-      url(../images/hero-img-md.jpg);
+      url(../images/hero-img-md.webp);
   }
 
   header {
@@ -724,7 +725,7 @@ from 768px up to 1119px
   }
 
   .navbar--mobile {
-    top: 2rem;
+    top: 23px;
     left: 2rem;
     max-width: 30%;
   }
@@ -861,7 +862,7 @@ from 768px up to 1119px
   }
 
   .navbar--large {
-    top: 9.5rem;
+    top: 8.4rem;
   }
 
   .icons {
@@ -909,7 +910,7 @@ from 768px up to 1119px
         rgba(6, 41, 70, 0.5),
         rgba(6, 41, 70, 0.5)
       ),
-      url(../images/hero-img-md.jpg);
+      url(../images/hero-img-md.webp);
     background-position: center 90%;
   }
 
