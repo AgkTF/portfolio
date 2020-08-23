@@ -35,8 +35,6 @@ body {
 from 0px up to 426px
  */
 
-/*  TODO: On hover, try the glitch effect */
-
 .hero {
   height: 538px;
   background-image: linear-gradient(rgba(6, 41, 70, 0.5), rgba(6, 41, 70, 0.5)),
@@ -47,6 +45,10 @@ from 0px up to 426px
   background-repeat: no-repeat;
 }
 
+.logo__div {
+  padding-top: 5px;
+}
+
 .logo {
   font-family: "Poppins", sans-serif;
   color: var(--body--text);
@@ -54,10 +56,7 @@ from 0px up to 426px
   text-decoration: none;
   font-weight: bold;
   border-top: 5px solid var(--body--text);
-}
-
-.logo__div {
-  padding-top: 5px;
+  transition: all ease-in-out 0.2s;
 }
 
 .hamburger {
@@ -350,6 +349,10 @@ from 0px up to 426px
   text-align: center;
 }
 
+.skill__logo {
+  width: 50px;
+}
+
 .skills__logos {
   width: 226px;
   display: flex;
@@ -357,7 +360,21 @@ from 0px up to 426px
   justify-content: center;
   margin: auto;
 }
-.skills__logos img:nth-child(2) {
+
+.first-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sec-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+/* .skills__logos img:nth-child(2) {
   margin: 0 2.5rem;
 }
 
@@ -371,7 +388,7 @@ from 0px up to 426px
 
 .skill-logo {
   width: 46px;
-}
+} */
 
 .projects__boxes {
   display: flex;
