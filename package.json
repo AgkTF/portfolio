@@ -4,6 +4,7 @@
   "description": "My portfolio",
   "main": "index.js",
   "scripts": {
+    "postcss": "postcss ./css/style.css > ./build/style.min.css",
     "build": "postcss ./css/style.css > ./build/style.min.css && babel JS/index.js -d ./build/js"
   },
   "keywords": [
