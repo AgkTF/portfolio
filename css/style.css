@@ -374,22 +374,6 @@ from 0px up to 426px
   margin-top: 1rem;
 }
 
-/* .skills__logos img:nth-child(2) {
-  margin: 0 2.5rem;
-}
-
-.skills__logos img:nth-child(4) {
-  margin: 1.5rem 2.5rem 0 2.5rem;
-}
-
-.skills__logos img:nth-child(5) {
-  margin-top: 1.5rem;
-}
-
-.skill-logo {
-  width: 46px;
-} */
-
 .projects__boxes {
   display: flex;
   flex-direction: column;
@@ -400,6 +384,36 @@ from 0px up to 426px
 .project__container {
   position: relative;
   overflow: hidden;
+}
+
+.psst__container {
+  margin: 0 auto;
+  border-top: 3px solid var(--dark-grey);
+  width: 12rem;
+  color: var(--main-bg);
+  font-family: "Poppins";
+  font-size: 16px;
+  text-align: center;
+  background: var(--body--text);
+  padding: 8px 20px;
+  font-weight: 300;
+  box-shadow: 1px 1px 10px 1px black;
+  cursor: pointer;
+}
+
+.psst__container:hover {
+  box-shadow: 1px 1px 1px 1px black;
+  color: var(--body--text);
+  background: var(--third-bg);
+}
+
+.psst__link {
+  text-decoration: none;
+}
+
+.psst__link:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 .project__container:nth-child(2n) {
