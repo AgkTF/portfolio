@@ -387,7 +387,7 @@ from 0px up to 426px
 }
 
 .psst__container {
-  margin: 0 auto;
+  margin: 2rem auto 0 auto;
   border-top: 3px solid var(--dark-grey);
   width: 12rem;
   color: var(--main-bg);
