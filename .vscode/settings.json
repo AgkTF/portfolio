@@ -15,5 +15,8 @@
     "statusBarItem.hoverBackground": "#4d6e96",
     "statusBar.foreground": "#e7e7e7"
   },
-  "peacock.color": "#3c5574"
+  "peacock.color": "#3c5574",
+  "cSpell.words": [
+    "Agk's"
+  ]
 }
